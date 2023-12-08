@@ -1,0 +1,389 @@
+/* General Application Styles */
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh; /* Minimum full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers horizontally */
+  padding-top: 60px; /* Space for navbar */
+}
+
+.App {
+  background-image: url('/home/revalaxmi/new2/my-fabric-frontend/public/BCBG6.png'); /* Adjust the path as necessary */
+  background-size: cover; /* Ensure it covers the entire area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+  min-height: 100vh; /* Minimum height to full viewport */
+}
+
+.App {
+  position: relative; /* Needed for proper positioning of pseudo-element */
+  min-height: 100vh;
+}
+
+
+
+/* Navigation Bar Styles */
+.navbar {
+  background-color: #000000;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background-color: #555;
+}
+
+/* Form Group Styles */
+.form-group {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+input[type='text'],
+input[type='password'] {
+  padding: 0.5rem;
+  margin: 0.5rem 0; /* Only vertical margin */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: calc(100% - 1rem); /* Full width minus margin */
+  max-width: 300px; /* Ensures they don't get too wide on larger screens */
+}
+
+/* Button Styles */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0; /* Increase vertical margin */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 200px; /* Fixed width for buttons */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Message and Error Styles */
+.message,
+.error {
+  margin: 0.5rem;
+}
+
+.message {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+
+/* Additional responsive adjustments */
+@media (max-width: 768px) {
+  .form-group {
+    width: 90%;
+  }
+
+  input[type='text'],
+  input[type='password'],
+  button {
+    width: calc(100% - 2rem); /* Full width minus padding */
+  }
+}
+
+/* Existing CSS */
+
+.admin-user-container {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Align children to the center */
+  margin-bottom: 2rem; /* Space below the entire container */
+}
+
+/* Removed the blue background from the wrapper */
+.admin-user-section {
+  display: flex;
+  justify-content: space-between; /* Ensures space between children */
+  gap: 20px; /* Creates space between the flex items */
+  width: 100%;
+  max-width: 900px; /* Adjust the max-width as necessary */
+  margin: auto; /* Centers the admin-user-section */
+}
+
+.user-section {
+  background-color: #000000; /* Blue background */
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  width: 100%;
+}
+
+/* Rest of your CSS */
+
+
+.admin-section {
+  background-color: #000000; /* Blue background */
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px; /* Adjust as needed */
+  width: 100%;
+  margin: auto;
+}
+
+/* You might want to apply similar styles to the user-section if needed */
+
+
+/* Styles for input fields */
+input[type='text'], input[type='password'], .text-input {
+  padding: 0.5rem;
+  margin: 0.5rem 0; /* Only vertical margin */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 80%; /* Makes the input fields wider */
+  max-width: 300px; /* Ensures they don't get too wide on larger screens */
+}
+
+/* Styles for buttons */
+button, .submit-button {
+  background-color: #000000;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0; /* Increase vertical margin */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 200px; /* Fixed width for buttons */
+}
+
+/* Ensure there's no overlap if the screen is too small */
+@media (max-width: 768px) {
+  .admin-user-section {
+    flex-direction: column;
+    gap: 10px; /* Adjusted for vertical stacking */
+  }
+
+  .admin-section, .user-section {
+    margin: 10px 0; /* Adjusted for vertical stacking */
+  }
+}
+
+
+
+/* Styles for other sections remain the same */
+
+
+
+.patient-section-container {
+  background-color: #000000; /* Blue background */
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.patient-section-container input,
+.patient-section-container button {
+  margin: 0.5rem 0; /* Spacing between inputs and button */
+  /* Add additional styling for inputs and button if necessary */
+}
+
+
+.record-section-container, .patient-section-container {
+  background-color: #000000; /* Blue background */
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px; /* Adjust as needed */
+  width: 100%;
+  margin: auto;
+}
+
+/* Styles for input fields and buttons inside the containers */
+.record-section-container input, 
+.record-section-container button,
+.patient-section-container input, 
+.patient-section-container button {
+  margin: 0.5rem 0; /* Spacing between inputs and button */
+  /* Add additional styling for inputs and button if necessary */
+}
+
+
+.enroll-admin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(0, 0, 0);
+  margin: auto; /* Centers the box in the page */
+  padding: 20px; /* Optional: Adds some space inside the box */
+  width: 50%; /* Adjust width as needed */
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(0, 0, 0);
+  margin: auto;
+  padding: 20px;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.text-input, .submit-button {
+  margin: 10px 0;
+  width: 100%; /* Ensures the input and button span the full width of the form group */
+}
+
+.message, .error {
+  color: green; /* or red for errors */
+  margin: 10px 0;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  margin: auto;
+  padding: 20px;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.text-input, .submit-button {
+  margin: 10px 0;
+  width: 100%; /* Ensures the input and button span the full width of the form group */
+}
+
+.message, .error {
+  color: green; /* Change as needed, e.g., red for errors */
+  margin: 10px 0;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Use the full height of the viewport */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  margin: 0;
+  padding: 10px;
+}
+
+
+
+.about-page {
+  /* This centers the content and adds padding around the whole about page. */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.text-section {
+  /* This creates a white box for each section of text. */
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  margin-bottom: 20px; /* Adds space between sections */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+  border-radius: 5px; /* Optional: Rounds the corners of the box */
+  width: 80%; /* Adjust the width as needed */
+  max-width: 800px; /* Ensures the boxes are not too wide on larger screens */
+}
+
+/* If you have a global background set, you might want to ensure the text color is something that contrasts well with white */
+.text-section, .text-section h2, .text-section h3, .text-section p, .text-section strong {
+  color: #333; /* This is a dark color for the text. Adjust as needed. */
+}
+
+/* Ensure the rest of your styles are consistent and do not override these in a way that reduces readability */
+
+
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #666; /* Or any color that suits your design */
+}
+
+.about-page {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  padding: 20px; /* Add padding around the main container */
+}
+
+.scrollable-content {
+  background-color: white; /* Background color of the box */
+  border: 1px solid #ddd; /* Optional border for the box */
+  padding: 20px;
+  height: 70vh; /* Fixed height for the box; 70% of the viewport height */
+  overflow-y: auto; /* Enables scrolling for overflow content */
+  width: 90%; /* Width of the box */
+  max-width: 800px; /* Maximum width of the box */
+  margin: 0 auto; /* Center the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.text-section {
+  margin-bottom: 20px; /* Adds space between sections */
+  
+}
+
+.text-section h2, .text-section h3, .text-section p, .text-section strong {
+  margin: 10px 0; /* Adds margin to text elements */
+}
+
+.text-section ul {
+  padding-left: 20px; /* Adds padding to the list */
+}
+
+.text-section li {
+  list-style-type: disc; /* Adds bullet points to list items */
+  margin-bottom: 10px; /* Adds space between list items */
+}
